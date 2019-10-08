@@ -6,8 +6,10 @@ description = "Tools for embedding build information into rust binaries"
 repository = "https://github.com/guillax/dirt-build"
 readme = "README.md"
 license-file = "LICENSE.md"
-
 edition = "2018"
+
+[badges]
+travis-ci = { repository = "guillax/dirt-build", branch = "master" }
 
 [dependencies]
 git2 = "0.10.*"
