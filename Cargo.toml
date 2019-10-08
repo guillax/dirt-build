@@ -1,0 +1,12 @@
+[package]
+name = "dirt-build"
+version = "0.1.0"
+authors = ["Xavier Guillaume <xavierguillaume@hotmail.fr>"]
+description = "Tools for embedding build information into into rust binaries"
+repository = "https://github.com/guillax/dirt-build"
+readme = "README.md"
+
+edition = "2018"
+
+[dependencies]
+git2 = "0.10.*"
