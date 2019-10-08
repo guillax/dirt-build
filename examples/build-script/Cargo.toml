@@ -1,0 +1,9 @@
+[package]
+name = "build-script"
+version = "0.1.0"
+authors = ["Xavier Guillaume <xavierguillaume@hotmail.fr>"]
+edition = "2018"
+build = "build.rs"
+
+[build-dependencies]
+dirt-build = { path = "../../" }
