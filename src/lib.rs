@@ -61,3 +61,20 @@ impl Repository {
         })
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn repository_instanciation_should_succeed() {
+        assert!(Repository::new(None).is_ok(), "Failed to instanciate repository");
+    }
+
+    #[test]
+    fn repository_instanciation_should_fail() {
+        let repo = Repository::new(Some(std::path::Path::new("/unexisting-directory")));
+
+        assert!(repo.is_err(), "Repository should not have been created");
+    }
+}

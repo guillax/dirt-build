@@ -1,15 +1,22 @@
 [package]
+
 name = "dirt-build"
-version = "0.1.0"
-authors = ["Xavier Guillaume <xavierguillaume@hotmail.fr>"]
 description = "Tools for embedding build information into rust binaries"
-repository = "https://github.com/guillax/dirt-build"
+version = "0.1.0"
+
+repository = "https://github.com/guillax/dirt-build.git"
+homepage = "https://github.com/guillax/dirt-build.git"
+
+license = "MIT"
 readme = "README.md"
-license-file = "LICENSE.md"
+
+authors = ["Xavier Guillaume <xavierguillaume@hotmail.fr>"]
+
 edition = "2018"
 
 [badges]
 travis-ci = { repository = "guillax/dirt-build", branch = "master" }
+coveralls = { repository = "guillax/dirt-build", branch = "master", service = "github" }
 
 [dependencies]
 git2 = "0.10.*"
